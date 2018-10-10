@@ -11,7 +11,11 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-            echo 'Hello, World!';
+            $myPartyAges = array(20, 21, 22, 23, 24);
+            
+            for ($i = 0; $i < count($myPartyAges); $i++) {
+                echo $myPartyAges[$i] . '<br>';
+            }
         ?>
     </body>
 </html>
