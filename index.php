@@ -1,7 +1,21 @@
 <?php
 
-$myPartyAges = [20, 21, 22, 23, 24];
+class Student  
+{
+    public $id;
+    public $name;
 
-for ($i = 0; $i < count($myPartyAges); $i++) {
-    echo $myPartyAges[$i] . "\n";
+    public function __construct(int $id, string $name) {
+        $this->id = $id;
+        $this->name = $name;
+    }
+}
+
+$students = [
+    new Student(101, "Ahmad Fasehan"),
+    new Student(102, "Andris Firmansyah")
+];
+
+foreach ($students as $student ) {
+    echo $student->name . "\n";
 }
